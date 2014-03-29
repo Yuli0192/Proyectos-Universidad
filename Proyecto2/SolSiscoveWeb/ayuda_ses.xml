@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sistema>
+  <sesion>
+    <CS>Cerrar Sesión  
+		 
+	Para cerrar sesión diríjase al menú principal y presione el botón "Cerrar Sesión" automáticamente el sistema mostrará la página de inicial de identificación de usuario. 
+	</CS>
+  </sesion>
+  <sesion>
+    <IS>Iniciar Sesión  
+		 
+	Para iniciar sesión en el sistema, ingrese su nombre de usuario (correo electrónico) y contraseña en los campos de textos respectivos. Seguido presione el botón aceptar. 
+	</IS>
+  </sesion>
+</sistema>

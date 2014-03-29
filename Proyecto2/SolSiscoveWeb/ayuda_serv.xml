@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sistema>
+  <servicio>
+    <RS>Registrar Servicio 
+		 
+	Para registrar un servicio seleccionamos el botón de registrar, luego donde dice Servicio y llenamos el formulario con la información solicitada, por ultimo presionamos el botón de registrar. 
+	</RS>
+  </servicio>
+  <servicio>
+    <ES>Eliminar Servicio 
+		 
+	Esta opción nos permite eliminar un servicio seleccionada del sistema. En la pantalla de buscar, seleccionamos el servicio y se presiona el botón de eliminar. 
+	</ES>
+  </servicio>
+  <servicio>
+    <MS>Modificar Servicio 
+		 
+	Seleccionamos el botón de modificar, luego modificamos el formulario con la información deseada y por ultimo presionamos el botón de modificar. El código que identifica el servicio no podrá ser modificado. 
+	</MS>
+  </servicio>
+  <servicio>
+    <LS>Listar Servicios 
+		 
+	Esta opción nos despliega toda la información de cada uno de los servicios que están registrados en el sistema. 
+	</LS>
+  </servicio>
+  <servicio>
+    <BS>Buscar Servicio 
+		 
+	Seleccionamos el botón de buscar, seleccionamos el modo de búsqueda que deseamos, sea por código de servicio o por nombre, ingresamos en el campo de texto el criterio de búsqueda luego se mostrara la información respectiva al servicio que busca. 
+	</BS>
+  </servicio>
+</sistema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sistema>
+  <factura>
+    <RF>Registrar Factura  
+		 
+	Para registrar una factura, seleccione en el menú principal el botón "Registrar", luego elija "Registrar Factura" e ingrese los datos solicitados en el formulario respectivo, seguidamente presione el botón de "Registrar" y acepta la confirmación. 
+	</RF>
+  </factura>
+  <factura>
+	<EF>Eliminar Factura 
+	
+	Para Eliminar la información de una factura seleccione en el menú principal el botón "Buscar", luego elija "Buscar factura" e ingrese el criterio de búsqueda, como resultado obtendrá un formulario con los datos cargados respectivos a la factura. Seguidamente presione el botón de "Eliminar" y acepta la confirmación. 
+	</EF>
+  </factura>
+  <factura>
+	<MF>Modificar Factura
+	
+	Para actualizar la información de un grupo de ventas seleccione en el menú principal el botón "Buscar", luego elija "Buscar factura" e ingrese el criterio de búsqueda, como resultado obtendrá un formulario con los datos respectivos a la factura cargados. Seguidamente modifique los datos deseados y permitidos y presione el botón de "Modificar" y acepta la confirmación. 
+	</MF>
+  </factura>
+  <factura>
+	<BF>Buscar Factura
+	
+	Para Buscar la información de una factura seleccione en el menú principal el botón "Buscar", luego elija "Buscar factura" e ingrese el criterio de búsqueda, como resultado obtendrá un formulario con los datos cargados respectivos a la factura. 
+	</BF>
+  </factura>
+</sistema>

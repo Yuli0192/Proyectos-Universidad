@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="procCalculoComisionPorProductoVendido" xml:space="preserve">
+    <value>proc_calculocomisionporproductovendido</value>
+  </data>
+  <data name="procCambiarContrasenna" xml:space="preserve">
+    <value>proc_cambiarcontrasenna</value>
+  </data>
+  <data name="procCancelarComision" xml:space="preserve">
+    <value>proc_cancelarcomision</value>
+  </data>
+  <data name="procCCVentasRealizadas" xml:space="preserve">
+    <value>proc_calcularcomisionventasrealizadas</value>
+  </data>
+  <data name="procDeleteCliente" xml:space="preserve">
+    <value>proc_eliminarusuario</value>
+  </data>
+  <data name="procdeleteplanservicio" xml:space="preserve">
+    <value>proc_deleteplanservicio</value>
+  </data>
+  <data name="procDeleteServicio" xml:space="preserve">
+    <value>proc_deleteservicio</value>
+  </data>
+  <data name="procInsertServicio" xml:space="preserve">
+    <value>proc_insertservicio</value>
+  </data>
+  <data name="procInsertUsuario" xml:space="preserve">
+    <value>proc_registrarusuario</value>
+  </data>
+  <data name="proclistarmastersgerentesdisponibles" xml:space="preserve">
+    <value>proc_listarmastersgerentesdisponibles</value>
+  </data>
+  <data name="procListarServicios" xml:space="preserve">
+    <value>proc_listarservicios</value>
+  </data>
+  <data name="procListarUsuarios" xml:space="preserve">
+    <value>proc_listarusuarios</value>
+  </data>
+  <data name="procSelectServicioCod" xml:space="preserve">
+    <value>proc_selectserviciocod</value>
+  </data>
+  <data name="procSelectServicioNombre" xml:space="preserve">
+    <value>proc_selectservicionombre</value>
+  </data>
+  <data name="procSelectUsuarioId" xml:space="preserve">
+    <value>proc_buscarusuarioid</value>
+  </data>
+  <data name="procSelectUsuarioNombre" xml:space="preserve">
+    <value>proc_buscarusuarioaproxnombre</value>
+  </data>
+  <data name="procUpdateServicio" xml:space="preserve">
+    <value>proc_updateservicio</value>
+  </data>
+  <data name="procUpdateUsuario" xml:space="preserve">
+    <value>proc_modificarusuario</value>
+  </data>
+  <data name="proc_agregarlineadetalle" xml:space="preserve">
+    <value>proc_agregarlineadetalle</value>
+  </data>
+  <data name="proc_agregarservicioagrupodeventa" xml:space="preserve">
+    <value>proc_agregarservicioagrupodeventa</value>
+  </data>
+  <data name="proc_agregarvendedoragrupodeventa" xml:space="preserve">
+    <value>proc_agregarvendedoragrupodeventa</value>
+  </data>
+  <data name="proc_aprobarfactura" xml:space="preserve">
+    <value>proc_aprobarfactura</value>
+  </data>
+  <data name="proc_asignarclienteusuario" xml:space="preserve">
+    <value>proc_asignarclienteusuario</value>
+  </data>
+  <data name="proc_buscardetalle" xml:space="preserve">
+    <value>proc_buscardetalle</value>
+  </data>
+  <data name="proc_buscarfactura" xml:space="preserve">
+    <value>proc_buscarfactura</value>
+  </data>
+  <data name="proc_buscarfacturaaprox" xml:space="preserve">
+    <value>proc_buscarfacturaaprox</value>
+  </data>
+  <data name="proc_buscarfacturasgrupoventasporfechas" xml:space="preserve">
+    <value>proc_buscarfacturasgrupoventasporfechas</value>
+  </data>
+  <data name="proc_buscarfacturasporcliente" xml:space="preserve">
+    <value>proc_buscarfacturasporcliente</value>
+  </data>
+  <data name="proc_buscarfacturasporfechas" xml:space="preserve">
+    <value>proc_buscarfacturasporfechas</value>
+  </data>
+  <data name="proc_buscarfacturasporvendedor" xml:space="preserve">
+    <value>proc_buscarfacturasporvendedor</value>
+  </data>
+  <data name="proc_buscargrupodeventa" xml:space="preserve">
+    <value>proc_buscargrupodeventa</value>
+  </data>
+  <data name="proc_buscargrupodeventaaprox" xml:space="preserve">
+    <value>proc_buscargrupodeventaaprox</value>
+  </data>
+  <data name="proc_buscarpermisosxrol" xml:space="preserve">
+    <value>proc_buscarpermisosxrol</value>
+  </data>
+  <data name="proc_buscarserviciosdegrupoventas" xml:space="preserve">
+    <value>proc_buscarserviciosdegrupoventas</value>
+  </data>
+  <data name="proc_buscarserviciosdispparagrupo" xml:space="preserve">
+    <value>proc_buscarserviciosdispparagrupo</value>
+  </data>
+  <data name="proc_buscarusuarioaproxnombre" xml:space="preserve">
+    <value>proc_buscarusuarioaproxnombre</value>
+  </data>
+  <data name="proc_buscarusuarioid" xml:space="preserve">
+    <value>proc_buscarusuarioid</value>
+  </data>
+  <data name="proc_buscarusuarioporcorreoycontrasenna" xml:space="preserve">
+    <value>proc_buscarusuarioporcorreoycontrasenna</value>
+  </data>
+  <data name="proc_buscarvendedoresdegrupoventas" xml:space="preserve">
+    <value>proc_buscarvendedoresdegrupoventas</value>
+  </data>
+  <data name="proc_buscarvendedoresdispparagrupo" xml:space="preserve">
+    <value>proc_buscarvendedoresdispparagrupo</value>
+  </data>
+  <data name="proc_cambiarcontrasenna" xml:space="preserve">
+    <value>proc_cambiarcontrasenna</value>
+  </data>
+  <data name="proc_deletecliente" xml:space="preserve">
+    <value>proc_deletecliente</value>
+  </data>
+  <data name="proc_deleteplanventa" xml:space="preserve">
+    <value>proc_deleteplanventa</value>
+  </data>
+  <data name="proc_deleteservicio" xml:space="preserve">
+    <value>proc_deleteservicio</value>
+  </data>
+  <data name="proc_eliminarfactura" xml:space="preserve">
+    <value>proc_eliminarfactura</value>
+  </data>
+  <data name="proc_eliminargrupodeventa" xml:space="preserve">
+    <value>proc_eliminargrupodeventa</value>
+  </data>
+  <data name="proc_eliminarlineadetalle" xml:space="preserve">
+    <value>proc_eliminarlineadetalle</value>
+  </data>
+  <data name="proc_eliminarserviciodegrupodeventa" xml:space="preserve">
+    <value>proc_eliminarserviciodegrupodeventa</value>
+  </data>
+  <data name="proc_eliminarusuario" xml:space="preserve">
+    <value>proc_eliminarusuario</value>
+  </data>
+  <data name="proc_eliminarvendedordegrupodeventa" xml:space="preserve">
+    <value>proc_eliminarvendedordegrupodeventa</value>
+  </data>
+  <data name="proc_extraerDatosComisionCalculada" xml:space="preserve">
+    <value>proc_extraerDatosComisionCalculada</value>
+  </data>
+  <data name="proc_insertcliente" xml:space="preserve">
+    <value>proc_insertcliente</value>
+  </data>
+  <data name="proc_insertplanservicio" xml:space="preserve">
+    <value>proc_insertplanservicio</value>
+  </data>
+  <data name="proc_insertplanventa" xml:space="preserve">
+    <value>proc_insertplanventa</value>
+  </data>
+  <data name="proc_insertservicio" xml:space="preserve">
+    <value>proc_insertservicio</value>
+  </data>
+  <data name="proc_invalidarfactura" xml:space="preserve">
+    <value>proc_invalidarfactura</value>
+  </data>
+  <data name="proc_listarclientes" xml:space="preserve">
+    <value>proc_listarclientes</value>
+  </data>
+  <data name="proc_listarcomisionesporvendedor" xml:space="preserve">
+    <value>proc_listarcomisionesporvendedor</value>
+  </data>
+  <data name="proc_listarfacturas" xml:space="preserve">
+    <value>proc_listarfacturas</value>
+  </data>
+  <data name="proc_listargrupos" xml:space="preserve">
+    <value>proc_listargrupos</value>
+  </data>
+  <data name="proc_listarpermisos" xml:space="preserve">
+    <value>proc_listarpermisos</value>
+  </data>
+  <data name="proc_listarplanes" xml:space="preserve">
+    <value>proc_listarplanes</value>
+  </data>
+  <data name="proc_listarservicios" xml:space="preserve">
+    <value>proc_listarservicios</value>
+  </data>
+  <data name="proc_listarusuarios" xml:space="preserve">
+    <value>proc_listarusuarios</value>
+  </data>
+  <data name="proc_listarvendedores" xml:space="preserve">
+    <value>proc_listarvendedores</value>
+  </data>
+  <data name="proc_modificargrupodeventa" xml:space="preserve">
+    <value>proc_modificargrupodeventa</value>
+  </data>
+  <data name="proc_modificarusuario" xml:space="preserve">
+    <value>proc_modificarusuario</value>
+  </data>
+  <data name="proc_registrarfactura" xml:space="preserve">
+    <value>proc_registrarfactura</value>
+  </data>
+  <data name="proc_registrargrupodeventa" xml:space="preserve">
+    <value>proc_registrargrupodeventa</value>
+  </data>
+  <data name="proc_registrarusuario" xml:space="preserve">
+    <value>proc_registrarusuario</value>
+  </data>
+  <data name="proc_registrarusuario1" xml:space="preserve">
+    <value>proc_registrarusuario</value>
+  </data>
+  <data name="proc_SelectAllDepartamento" xml:space="preserve">
+    <value>proc_SelectAllDepartamento</value>
+  </data>
+  <data name="proc_SelectAllRol" xml:space="preserve">
+    <value>proc_SelectAllRol</value>
+  </data>
+  <data name="proc_selectclienteid" xml:space="preserve">
+    <value>proc_selectclienteid</value>
+  </data>
+  <data name="proc_selectclientenombre" xml:space="preserve">
+    <value>proc_selectclientenombre</value>
+  </data>
+  <data name="proc_selectplanservicio" xml:space="preserve">
+    <value>proc_selectplanservicio</value>
+  </data>
+  <data name="proc_selectplanventa" xml:space="preserve">
+    <value>proc_selectplanventa</value>
+  </data>
+  <data name="proc_selectserviciocod" xml:space="preserve">
+    <value>proc_selectserviciocod</value>
+  </data>
+  <data name="proc_selectservicionombre" xml:space="preserve">
+    <value>proc_selectservicionombre</value>
+  </data>
+  <data name="proc_selectserviciosinplan" xml:space="preserve">
+    <value>proc_selectserviciosinplan</value>
+  </data>
+  <data name="proc_updatecliente" xml:space="preserve">
+    <value>proc_updatecliente</value>
+  </data>
+  <data name="proc_updateservicio" xml:space="preserve">
+    <value>proc_updateservicio</value>
+  </data>
+</root>

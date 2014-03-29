@@ -1,0 +1,51 @@
+﻿/*
+Hoja de Estilo (CSS)
+Creada por: Yuliana Arias Meza
+Rol: Desarrollo
+Empresa: Argus
+Fecha de Creación: 14 de Agosto del 2011
+Fecha de Modificación: 14 de Agosto del 2011
+*/
+
+/*Estilo para el cuerpo de la página*/
+
+body {
+	background-color:WHITE;
+	font-family: Arial, Century Gothic, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	color: #333333;
+}
+
+/*Estilo para el menu desplegable*/
+#MenuPrincipal
+ {
+     height: 37px;
+     text-align: left;
+     margin-left: 23px;
+ }
+ 
+ /*Estilo para el header*/
+ #header h1 {
+	padding: 0 0 0 20px;
+	font-size: 22px;
+	letter-spacing: -2px;
+	color: #333399;
+	text-decoration: none;
+}
+
+#ContentPrincipal{
+	background-color:#CCCCCC;
+	font-family: Arial, Century Gothic, Helvetica, sans-serif;
+	font-size: 11px;
+	/*line-height: 18px;*/
+	color: #333333;
+}
+.titulos
+{
+	font-family: Arial; 
+	font-size: 20pt;
+	color: #000066;
+	height: 34px;
+}
+

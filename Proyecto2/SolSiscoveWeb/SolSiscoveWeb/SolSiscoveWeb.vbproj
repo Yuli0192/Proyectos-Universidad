@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FB85D48-EC06-41F4-B625-3EF89001F4B6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SolSiscoveWeb</RootNamespace>
+    <AssemblyName>SolSiscoveWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SolSiscoveWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SolSiscoveWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CllLogicaNegocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SolLogica\CllLogicaNegocio\CllLogicaNegocio\bin\Release\CllLogicaNegocio.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EO.Web, Version=9.0.19.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\banner.jpg" />
+    <Content Include="Imagenes\bg.jpg" />
+    <Content Include="Imagenes\btnAyuda.png" />
+    <Content Include="Imagenes\btnAyuda2.png" />
+    <Content Include="Imagenes\btnBuscar.png" />
+    <Content Include="Imagenes\btnConfirmarModificacion.png" />
+    <Content Include="Imagenes\btnDerecha.png" />
+    <Content Include="Imagenes\btnEliminar.png" />
+    <Content Include="Imagenes\btnGenerarReporte.png" />
+    <Content Include="Imagenes\btnIzquierda.png" />
+    <Content Include="Imagenes\btnLimpiar.png" />
+    <Content Include="Imagenes\btnModificar.png" />
+    <Content Include="Imagenes\btnRegistrar.png" />
+    <Content Include="Imagenes\btnRegresar.png" />
+    <Content Include="Imagenes\btnVer.png" />
+    <Content Include="Imagenes\footer.jpg" />
+    <Content Include="Imagenes\login-box-backg.png" />
+    <Content Include="Imagenes\login-btn.png" />
+    <Content Include="Imagenes\pie.png" />
+    <Content Include="Imagenes\siscove6.gif" />
+    <Content Include="Listar\frmListarComision.aspx" />
+    <Content Include="Listar\frmListarDisponibles.aspx" />
+    <Content Include="Listar\frmListarVentas.aspx" />
+    <Content Include="Listar\frmVentasGeneralesGrupo.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayuda\ctnAyuda.aspx.designer.vb">
+      <DependentUpon>ctnAyuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\ctnAyuda.aspx.vb">
+      <DependentUpon>ctnAyuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CastCadenas\ClsCastCadenaCliente.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaComision.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaFactura.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaGrupo.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaGrupoDeVenta.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaLineasDetalle.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaPermiso.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaPlanVenta.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaServicio.vb" />
+    <Compile Include="CastCadenas\ClsCastCadenaUsuario.vb" />
+    <Compile Include="iniciarSesion.aspx.designer.vb">
+      <DependentUpon>iniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iniciarSesion.aspx.vb">
+      <DependentUpon>iniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.aspx.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listar\frmListarComision.aspx.designer.vb">
+      <DependentUpon>frmListarComision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\frmListarComision.aspx.vb">
+      <DependentUpon>frmListarComision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listar\frmListarDisponibles.aspx.designer.vb">
+      <DependentUpon>frmListarDisponibles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\frmListarDisponibles.aspx.vb">
+      <DependentUpon>frmListarDisponibles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listar\frmListarVentas.aspx.designer.vb">
+      <DependentUpon>frmListarVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\frmListarVentas.aspx.vb">
+      <DependentUpon>frmListarVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listar\frmVentasGeneralesGrupo.aspx.designer.vb">
+      <DependentUpon>frmVentasGeneralesGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\frmVentasGeneralesGrupo.aspx.vb">
+      <DependentUpon>frmVentasGeneralesGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\BuscarModificarFactura.aspx.designer.vb">
+      <DependentUpon>BuscarModificarFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\BuscarModificarFactura.aspx.vb">
+      <DependentUpon>BuscarModificarFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\BuscarModificarGrupo.aspx.designer.vb">
+      <DependentUpon>BuscarModificarGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\BuscarModificarGrupo.aspx.vb">
+      <DependentUpon>BuscarModificarGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctnBuscarUsuario.aspx.designer.vb">
+      <DependentUpon>ctnBuscarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctnBuscarUsuario.aspx.vb">
+      <DependentUpon>ctnBuscarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\ctnRegistrarUsuario.aspx.designer.vb">
+      <DependentUpon>ctnRegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\ctnRegistrarUsuario.aspx.vb">
+      <DependentUpon>ctnRegistrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmBuscarModificarCliente.aspx.designer.vb">
+      <DependentUpon>frmBuscarModificarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmBuscarModificarCliente.aspx.vb">
+      <DependentUpon>frmBuscarModificarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmBuscarModificarPlanVenta.aspx.designer.vb">
+      <DependentUpon>frmBuscarModificarPlanVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmBuscarModificarPlanVenta.aspx.vb">
+      <DependentUpon>frmBuscarModificarPlanVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmBuscarModificarServicio.aspx.designer.vb">
+      <DependentUpon>frmBuscarModificarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmBuscarModificarServicio.aspx.vb">
+      <DependentUpon>frmBuscarModificarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmRegistrarCliente.aspx.designer.vb">
+      <DependentUpon>frmRegistrarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmRegistrarCliente.aspx.vb">
+      <DependentUpon>frmRegistrarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmRegistrarPlanVenta.aspx.designer.vb">
+      <DependentUpon>frmRegistrarPlanVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmRegistrarPlanVenta.aspx.vb">
+      <DependentUpon>frmRegistrarPlanVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmRegistrarServicio.aspx.designer.vb">
+      <DependentUpon>frmRegistrarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmRegistrarServicio.aspx.vb">
+      <DependentUpon>frmRegistrarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\RegistrarFactura.aspx.designer.vb">
+      <DependentUpon>RegistrarFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\RegistrarFactura.aspx.vb">
+      <DependentUpon>RegistrarFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\RegistrarGrupo.aspx.designer.vb">
+      <DependentUpon>RegistrarGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\RegistrarGrupo.aspx.vb">
+      <DependentUpon>RegistrarGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.vb">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes\cntCCGrupoVentas.aspx.designer.vb">
+      <DependentUpon>cntCCGrupoVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\cntCCGrupoVentas.aspx.vb">
+      <DependentUpon>cntCCGrupoVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRptComisionesPeriodo.aspx.designer.vb">
+      <DependentUpon>frmRptComisionesPeriodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRptComisionesPeriodo.aspx.vb">
+      <DependentUpon>frmRptComisionesPeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRptComisionesPor2Periodos.aspx.designer.vb">
+      <DependentUpon>frmRptComisionesPor2Periodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRptComisionesPor2Periodos.aspx.vb">
+      <DependentUpon>frmRptComisionesPor2Periodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRptComisionesVendedorPeriodo.aspx.designer.vb">
+      <DependentUpon>frmRptComisionesVendedorPeriodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRptComisionesVendedorPeriodo.aspx.vb">
+      <DependentUpon>frmRptComisionesVendedorPeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteTotalComisionesPorPeriodo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTotalComisionesPorPeriodo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteTotalComisionesVededorPorPeriodo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTotalComisionesVededorPorPeriodo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptComisionesPorMes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptComisionesPorMes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptComisionGrupoVentas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptComisionGrupoVentas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteTotalComisionesPorPeriodo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTotalComisionesPorPeriodo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteTotalComisionesVededorPorPeriodo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTotalComisionesVededorPorPeriodo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptComisionesPorMes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptComisionesPorMes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptComisionGrupoVentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptComisionGrupoVentas.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ayuda\ctnAyuda.aspx" />
+    <Content Include="eo_web.ashx" />
+    <Content Include="iniciarSesion.aspx" />
+    <Content Include="inicio.aspx" />
+    <Content Include="Mantenimiento\BuscarModificarFactura.aspx" />
+    <Content Include="Mantenimiento\BuscarModificarGrupo.aspx" />
+    <Content Include="Mantenimiento\ctnBuscarUsuario.aspx" />
+    <Content Include="Mantenimiento\ctnRegistrarUsuario.aspx" />
+    <Content Include="Mantenimiento\frmBuscarModificarCliente.aspx" />
+    <Content Include="Mantenimiento\frmBuscarModificarPlanVenta.aspx" />
+    <Content Include="Mantenimiento\frmBuscarModificarServicio.aspx" />
+    <Content Include="Mantenimiento\frmRegistrarCliente.aspx" />
+    <Content Include="Mantenimiento\frmRegistrarPlanVenta.aspx" />
+    <Content Include="Mantenimiento\frmRegistrarServicio.aspx" />
+    <Content Include="Mantenimiento\RegistrarFactura.aspx" />
+    <Content Include="Mantenimiento\RegistrarGrupo.aspx" />
+    <Content Include="Reportes\cntCCGrupoVentas.aspx" />
+    <Content Include="Reportes\frmRptComisionesPeriodo.aspx" />
+    <Content Include="Reportes\frmRptComisionesPor2Periodos.aspx" />
+    <Content Include="Reportes\frmRptComisionesVendedorPeriodo.aspx" />
+    <Content Include="Siscove.css" />
+    <Content Include="Master.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49310</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

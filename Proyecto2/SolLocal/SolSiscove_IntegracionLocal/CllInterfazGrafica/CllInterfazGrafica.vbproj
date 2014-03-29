@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FBFFB4C-E0BC-45B2-A216-3DA8E16CDC64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CllInterfazGrafica.My.MyApplication</StartupObject>
+    <RootNamespace>CllInterfazGrafica</RootNamespace>
+    <AssemblyName>CllInterfazGrafica</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CllInterfazGrafica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CllInterfazGrafica.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CllLogicaNegocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SolLogica\CllLogicaNegocio\CllLogicaNegocio\bin\Release\CllLogicaNegocio.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayuda\frmAyuda.Designer.vb">
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\frmAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClsCastCadenas\ClsCastCadenaCliente.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaComision.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaFactura.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaGrupo.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaGrupoDeVenta.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaLineasDetalle.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaPermiso.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaPlanVenta.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaServicio.vb" />
+    <Compile Include="ClsCastCadenas\ClsCastCadenaUsuario.vb" />
+    <Compile Include="Identificar Usuario\UsuarioActual.vb" />
+    <Compile Include="Listar\Comision\ctlListarComision.designer.vb">
+      <DependentUpon>ctlListarComision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\Comision\ctlListarComision.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Listar\Gerentes\ctlListarGerentes.Designer.vb">
+      <DependentUpon>ctlListarGerentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\Gerentes\ctlListarGerentes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Listar\Permiso\ctlListarPermisos.Designer.vb">
+      <DependentUpon>ctlListarPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\Permiso\ctlListarPermisos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Listar\VentasGenerales\ctlListarVentasGenerales.Designer.vb">
+      <DependentUpon>ctlListarVentasGenerales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\VentasGenerales\ctlListarVentasGenerales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Listar\Ventas\ctlListarVentas.designer.vb">
+      <DependentUpon>ctlListarVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Listar\Ventas\ctlListarVentas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Cliente\ctlBuscarCliente.Designer.vb">
+      <DependentUpon>ctlBuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Cliente\ctlBuscarCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Cliente\ctlRegistrarCliente.Designer.vb">
+      <DependentUpon>ctlRegistrarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Cliente\ctlRegistrarCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Factura\ctlBuscarFactura.Designer.vb">
+      <DependentUpon>ctlBuscarFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Factura\ctlBuscarFactura.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Factura\ctlRegistrarFactura.Designer.vb">
+      <DependentUpon>ctlRegistrarFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Factura\ctlRegistrarFactura.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Grupo\ctlBuscarGrupo.Designer.vb">
+      <DependentUpon>ctlBuscarGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Grupo\ctlBuscarGrupo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Grupo\ctlRegistrarGrupo.Designer.vb">
+      <DependentUpon>ctlRegistrarGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Grupo\ctlRegistrarGrupo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\PlanVentas\ctlBuscarPlanVenta.Designer.vb">
+      <DependentUpon>ctlBuscarPlanVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\PlanVentas\ctlBuscarPlanVenta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\PlanVentas\ctlRegistrarPlanVenta.Designer.vb">
+      <DependentUpon>ctlRegistrarPlanVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\PlanVentas\ctlRegistrarPlanVenta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Servicio\ctlBuscarServicio.Designer.vb">
+      <DependentUpon>ctlBuscarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Servicio\ctlBuscarServicio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Servicio\ctlRegistrarServicio.Designer.vb">
+      <DependentUpon>ctlRegistrarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Servicio\ctlRegistrarServicio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Usuario\ctlBuscar.designer.vb">
+      <DependentUpon>ctlBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Usuario\ctlBuscar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Usuario\ctlRegistrarUsuario.designer.vb">
+      <DependentUpon>ctlRegistrarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Usuario\ctlRegistrarUsuario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Principal\ctlPrincipal.Designer.vb">
+      <DependentUpon>ctlPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\ctlPrincipal.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Principal\frmIniciarSession.Designer.vb">
+      <DependentUpon>frmIniciarSession.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmIniciarSession.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\frmSiscove.Designer.vb">
+      <DependentUpon>frmSiscove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal\frmSiscove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal\modGlobal.vb" />
+    <Compile Include="Reportes\ctlReporte.Designer.vb">
+      <DependentUpon>ctlReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlReporte.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlReporteGrupoVentas.Designer.vb">
+      <DependentUpon>ctlReporteGrupoVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlReporteGrupoVentas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlReporteTotalComisionesPorPeriodo.Designer.vb">
+      <DependentUpon>ctlReporteTotalComisionesPorPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlReporteTotalComisionesPorPeriodo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\ctlReporteTotalComisionesPorVendedorPorPeriodo.Designer.vb">
+      <DependentUpon>ctlReporteTotalComisionesPorVendedorPorPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ctlReporteTotalComisionesPorVendedorPorPeriodo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteCCVentasRealizadas.Designer.vb">
+      <DependentUpon>frmReporteCCVentasRealizadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteCCVentasRealizadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteComisionesPorMes.Designer.vb">
+      <DependentUpon>frmReporteComisionesPorMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteComisionesPorMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteTotalComisionesPorPeriodo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTotalComisionesPorPeriodo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteTotalComisionesVededorPorPeriodo1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTotalComisionesVededorPorPeriodo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptCCVentasRealizadas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCCVentasRealizadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptComisionesPorMes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptComisionesPorMes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service References\TipoCambioDollar\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ayuda\frmAyuda.resx">
+      <DependentUpon>frmAyuda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar\Comision\ctlListarComision.resx">
+      <DependentUpon>ctlListarComision.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar\Gerentes\ctlListarGerentes.resx">
+      <DependentUpon>ctlListarGerentes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar\Permiso\ctlListarPermisos.resx">
+      <DependentUpon>ctlListarPermisos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar\VentasGenerales\ctlListarVentasGenerales.resx">
+      <DependentUpon>ctlListarVentasGenerales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar\Ventas\ctlListarVentas.resx">
+      <DependentUpon>ctlListarVentas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Cliente\ctlBuscarCliente.resx">
+      <DependentUpon>ctlBuscarCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Cliente\ctlRegistrarCliente.resx">
+      <DependentUpon>ctlRegistrarCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Factura\ctlBuscarFactura.resx">
+      <DependentUpon>ctlBuscarFactura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Factura\ctlRegistrarFactura.resx">
+      <DependentUpon>ctlRegistrarFactura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Grupo\ctlBuscarGrupo.resx">
+      <DependentUpon>ctlBuscarGrupo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Grupo\ctlRegistrarGrupo.resx">
+      <DependentUpon>ctlRegistrarGrupo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\PlanVentas\ctlBuscarPlanVenta.resx">
+      <DependentUpon>ctlBuscarPlanVenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\PlanVentas\ctlRegistrarPlanVenta.resx">
+      <DependentUpon>ctlRegistrarPlanVenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Servicio\ctlBuscarServicio.resx">
+      <DependentUpon>ctlBuscarServicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Servicio\ctlRegistrarServicio.resx">
+      <DependentUpon>ctlRegistrarServicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Usuario\ctlBuscar.resx">
+      <DependentUpon>ctlBuscar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\Usuario\ctlRegistrarUsuario.resx">
+      <DependentUpon>ctlRegistrarUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\ctlPrincipal.resx">
+      <DependentUpon>ctlPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmIniciarSession.resx">
+      <DependentUpon>frmIniciarSession.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal\frmSiscove.resx">
+      <DependentUpon>frmSiscove.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlReporte.resx">
+      <DependentUpon>ctlReporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlReporteGrupoVentas.resx">
+      <DependentUpon>ctlReporteGrupoVentas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlReporteTotalComisionesPorPeriodo.resx">
+      <DependentUpon>ctlReporteTotalComisionesPorPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ctlReporteTotalComisionesPorVendedorPorPeriodo.resx">
+      <DependentUpon>ctlReporteTotalComisionesPorVendedorPorPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteCCVentasRealizadas.resx">
+      <DependentUpon>frmReporteCCVentasRealizadas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteComisionesPorMes.resx">
+      <DependentUpon>frmReporteComisionesPorMes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteTotalComisionesPorPeriodo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTotalComisionesPorPeriodo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteTotalComisionesVededorPorPeriodo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTotalComisionesVededorPorPeriodo1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptCCVentasRealizadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCCVentasRealizadas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptComisionesPorMes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptComisionesPorMes.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\siscove6.gif" />
+    <None Include="Service References\TipoCambioDollar\wsIndicadoresEconomicos.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\TipoCambioDollar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TipoCambioDollar\wsIndicadoresEconomicos.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TipoCambioDollar\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Service References\TipoCambioDollar\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

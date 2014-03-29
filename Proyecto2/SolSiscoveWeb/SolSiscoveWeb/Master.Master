@@ -1,0 +1,319 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Master.master.vb" Inherits="SolSiscoveWeb.Master" %>
+
+<%@ Register assembly="EO.Web" namespace="EO.Web" tagprefix="eo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <center>
+        <form id="form1" runat="server">
+    <div id="top">
+        <img src="/Imagenes/banner.jpg" width="1025px"  height="90px" />
+        <eo:Menu ID="MenuGerenteVentas" runat="server" ControlSkinID="None" 
+            Width="1024px">
+            <LookItems>
+                <eo:MenuItem HoverStyle-CssText="color:#F7B00A;padding-left:5px;padding-right:5px;" 
+                    ItemID="_TopLevelItem" 
+                    NormalStyle-CssText="padding-left:5px;padding-right:5px;">
+                    <SubMenu ItemSpacing="5" OffsetX="-3" OffsetY="3" ShadowDepth="0" 
+                        
+                        Style-CssText="background-color:#f8fff0;border-bottom-color:#006600;border-bottom-style:solid;border-bottom-width:1px;border-left-color:#006600;border-left-style:solid;border-left-width:1px;border-right-color:#006600;border-right-style:solid;border-right-width:1px;border-top-color:#006600;border-top-style:solid;border-top-width:1px;color:#5f7786;cursor:hand;font-family:arial;font-size:12px;padding-bottom:3px;padding-left:3px;padding-right:3px;padding-top:3px;">
+                    </SubMenu>
+                </eo:MenuItem>
+                <eo:MenuItem IsSeparator="True" ItemID="_Separator" 
+                    NormalStyle-CssText="background-color:#006600;height:1px;width:1px;">
+                </eo:MenuItem>
+                <eo:MenuItem HoverStyle-CssText="color:#F7B00A;padding-left:5px;padding-right:5px;" 
+                    ItemID="_Default" NormalStyle-CssText="padding-left:5px;padding-right:5px;">
+                    <SubMenu ItemSpacing="5" OffsetX="3" OffsetY="-4" ShadowDepth="0" 
+                        Style-CssText="border-right: #e0e0e0 1px solid; padding-right: 3px; border-top: #e0e0e0 1px solid; padding-left: 3px; font-size: 12px; padding-bottom: 3px; border-left: #e0e0e0 1px solid; cursor: hand; color: #5f7786; padding-top: 3px; border-bottom: #e0e0e0 1px solid; font-family: arial; background-color: #f7f8f9">
+                    </SubMenu>
+                </eo:MenuItem>
+            </LookItems>
+            <TopGroup Style-CssText="background-image:url(00020005);border-bottom-color:#009900;border-left-color:#009900;border-left-style:solid;border-left-width:1px;border-right-color:#009900;border-right-style:solid;border-right-width:1px;border-top-color:#009900;border-top-style:solid;border-top-width:2px;color:#5f7786;cursor:hand;font-family:arial;font-size:12px;padding-bottom:3px;padding-left:10px;padding-right:10px;padding-top:3px;">
+                <Items>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Inicio" Width="122" NavigateUrl="~/inicio.aspx">
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Registrar" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Cliente" NavigateUrl="~/Mantenimiento/frmRegistrarCliente.aspx" >
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Factura" NavigateUrl="~/Mantenimiento/RegistrarFactura.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Grupo de Ventas" NavigateUrl="~/Mantenimiento/RegistrarGrupo.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Plan de Ventas" NavigateUrl="~/Mantenimiento/frmRegistrarPlanVenta.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Servicio" NavigateUrl="~/Mantenimiento/frmRegistrarServicio.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Usuario" NavigateUrl="~/Mantenimiento/ctnRegistrarUsuario.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Buscar" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Cliente" NavigateUrl="~/Mantenimiento/frmBuscarModificarCliente.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Factura" NavigateUrl="~/Mantenimiento/BuscarModificarFactura.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Grupo de Ventas" NavigateUrl="~/Mantenimiento/BuscarModificargrupo.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Plan de Ventas" NavigateUrl="~/Mantenimiento/frmBuscarModificarPlanVenta.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Servicio" NavigateUrl="~/Mantenimiento/frmBuscarModificarServicio.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Usuario" NavigateUrl="~/Mantenimiento/ctnBuscarUsuario.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Listar" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Ventas Por Vendedor" NavigateUrl="~/Listar/frmListarVentas.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Comisiones Por Vendedor" NavigateUrl="~/Listar/frmListarComision.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Reporte" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Comisiones entre 2 Periodos Diferentes " NavigateUrl="~/Reportes/frmRptComisionesPor2Periodos.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones por Grupo de Ventas" NavigateUrl="~/Reportes/cntCCGrupoVentas.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones Por Periodo" NavigateUrl="~/Reportes/frmRptComisionesPeriodo.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones Por Vendedor Por Periodo" NavigateUrl="~/Reportes/frmRptComisionesVendedorPeriodo.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Ayuda" Width="122" NavigateUrl="~/Ayuda/ctnAyuda.aspx">
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Cerrar Sesión" NavigateUrl="~/iniciarSesion.aspx" Width="122" >
+                    </eo:MenuItem>
+                </Items>
+            </TopGroup>
+        </eo:Menu>
+        
+        <eo:Menu ID="MenuGerenteGeneral" runat="server" ControlSkinID="None" 
+            Width="1024px">
+            <LookItems>
+                <eo:MenuItem HoverStyle-CssText="color:#F7B00A;padding-left:5px;padding-right:5px;" 
+                    ItemID="_TopLevelItem" 
+                    NormalStyle-CssText="padding-left:5px;padding-right:5px;">
+                    <SubMenu ItemSpacing="5" OffsetX="-3" OffsetY="3" ShadowDepth="0" 
+                        
+                        Style-CssText="background-color:#f8fff0;border-bottom-color:#006600;border-bottom-style:solid;border-bottom-width:1px;border-left-color:#006600;border-left-style:solid;border-left-width:1px;border-right-color:#006600;border-right-style:solid;border-right-width:1px;border-top-color:#006600;border-top-style:solid;border-top-width:1px;color:#5f7786;cursor:hand;font-family:arial;font-size:12px;padding-bottom:3px;padding-left:3px;padding-right:3px;padding-top:3px;">
+                    </SubMenu>
+                </eo:MenuItem>
+                <eo:MenuItem IsSeparator="True" ItemID="_Separator" 
+                    NormalStyle-CssText="background-color:#006600;height:1px;width:1px;">
+                </eo:MenuItem>
+                <eo:MenuItem HoverStyle-CssText="color:#F7B00A;padding-left:5px;padding-right:5px;" 
+                    ItemID="_Default" NormalStyle-CssText="padding-left:5px;padding-right:5px;">
+                    <SubMenu ItemSpacing="5" OffsetX="3" OffsetY="-4" ShadowDepth="0" 
+                        Style-CssText="border-right: #e0e0e0 1px solid; padding-right: 3px; border-top: #e0e0e0 1px solid; padding-left: 3px; font-size: 12px; padding-bottom: 3px; border-left: #e0e0e0 1px solid; cursor: hand; color: #5f7786; padding-top: 3px; border-bottom: #e0e0e0 1px solid; font-family: arial; background-color: #f7f8f9">
+                    </SubMenu>
+                </eo:MenuItem>
+            </LookItems>
+            <TopGroup Style-CssText="background-image:url(00020005);border-bottom-color:#009900;border-left-color:#009900;border-left-style:solid;border-left-width:1px;border-right-color:#009900;border-right-style:solid;border-right-width:1px;border-top-color:#009900;border-top-style:solid;border-top-width:2px;color:#5f7786;cursor:hand;font-family:arial;font-size:12px;padding-bottom:3px;padding-left:10px;padding-right:10px;padding-top:3px;">
+                <Items>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Inicio" Width="122" NavigateUrl="~/inicio.aspx">
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Buscar" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Cliente" NavigateUrl="~/Mantenimiento/frmBuscarModificarCliente.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Factura" NavigateUrl="~/Mantenimiento/BuscarModificarFactura.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Grupo de Ventas" NavigateUrl="~/Mantenimiento/BuscarModificargrupo.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Plan de Ventas" NavigateUrl="~/Mantenimiento/frmBuscarModificarPlanVenta.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Servicio" NavigateUrl="~/Mantenimiento/frmBuscarModificarServicio.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Usuario" NavigateUrl="~/Mantenimiento/ctnBuscarUsuario.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Listar" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Ventas Por Vendedor" NavigateUrl="~/Listar/frmListarVentas.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Comisiones Por Vendedor" NavigateUrl="~/Listar/frmListarComision.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Reporte" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Comisiones entre 2 Periodos Diferentes " NavigateUrl="~/Reportes/frmRptComisionesPor2Periodos.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones por Grupo de Ventas" NavigateUrl="~/Reportes/cntCCGrupoVentas.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones Por Periodo" NavigateUrl="~/Reportes/frmRptComisionesPeriodo.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones Por Vendedor Por Periodo" NavigateUrl="~/Reportes/frmRptComisionesVendedorPeriodo.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Ayuda" Width="122" NavigateUrl="~/Ayuda/ctnAyuda.aspx">
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Cerrar Sessión" 
+                        Width="122" NavigateUrl="~/iniciarSesion.aspx">
+                    </eo:MenuItem>
+                </Items>
+            </TopGroup>
+        </eo:Menu>
+        
+        <eo:Menu ID="MenuVendedor" runat="server" ControlSkinID="None" Width="1024px">
+            <LookItems>
+                <eo:MenuItem HoverStyle-CssText="color:#F7B00A;padding-left:5px;padding-right:5px;" 
+                    ItemID="_TopLevelItem" 
+                    NormalStyle-CssText="padding-left:5px;padding-right:5px;">
+                    <SubMenu ItemSpacing="5" OffsetX="-3" OffsetY="3" ShadowDepth="0" 
+                        
+                        Style-CssText="background-color:#f8fff0;border-bottom-color:#006600;border-bottom-style:solid;border-bottom-width:1px;border-left-color:#006600;border-left-style:solid;border-left-width:1px;border-right-color:#006600;border-right-style:solid;border-right-width:1px;border-top-color:#006600;border-top-style:solid;border-top-width:1px;color:#5f7786;cursor:hand;font-family:arial;font-size:12px;padding-bottom:3px;padding-left:3px;padding-right:3px;padding-top:3px;">
+                    </SubMenu>
+                </eo:MenuItem>
+                <eo:MenuItem IsSeparator="True" ItemID="_Separator" 
+                    NormalStyle-CssText="background-color:#006600;height:1px;width:1px;">
+                </eo:MenuItem>
+                <eo:MenuItem HoverStyle-CssText="color:#F7B00A;padding-left:5px;padding-right:5px;" 
+                    ItemID="_Default" NormalStyle-CssText="padding-left:5px;padding-right:5px;">
+                    <SubMenu ItemSpacing="5" OffsetX="3" OffsetY="-4" ShadowDepth="0" 
+                        Style-CssText="border-right: #e0e0e0 1px solid; padding-right: 3px; border-top: #e0e0e0 1px solid; padding-left: 3px; font-size: 12px; padding-bottom: 3px; border-left: #e0e0e0 1px solid; cursor: hand; color: #5f7786; padding-top: 3px; border-bottom: #e0e0e0 1px solid; font-family: arial; background-color: #f7f8f9">
+                    </SubMenu>
+                </eo:MenuItem>
+            </LookItems>
+            <TopGroup Style-CssText="background-image:url(00020005);border-bottom-color:#009900;border-left-color:#009900;border-left-style:solid;border-left-width:1px;border-right-color:#009900;border-right-style:solid;border-right-width:1px;border-top-color:#009900;border-top-style:solid;border-top-width:2px;color:#5f7786;cursor:hand;font-family:arial;font-size:12px;padding-bottom:3px;padding-left:10px;padding-right:10px;padding-top:3px;">
+                <Items>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Inicio" Width="122" NavigateUrl="~/inicio.aspx">
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Registrar" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Cliente" NavigateUrl="~/Mantenimiento/frmRegistrarCliente.aspx" >
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Factura" NavigateUrl="~/Mantenimiento/RegistrarFactura.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Buscar" Width="122">
+                        <SubMenu>
+                             <Items>
+                                <eo:MenuItem Text-Html="Cliente" NavigateUrl="~/Mantenimiento/frmBuscarModificarCliente.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Factura" NavigateUrl="~/Mantenimiento/BuscarModificarFactura.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Grupo de Ventas" NavigateUrl="~/Mantenimiento/BuscarModificargrupo.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Plan de Ventas" NavigateUrl="~/Mantenimiento/frmBuscarModificarPlanVenta.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Servicio" NavigateUrl="~/Mantenimiento/frmBuscarModificarServicio.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Usuario" NavigateUrl="~/Mantenimiento/ctnBuscarUsuario.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Listar" Width="122">
+                        <SubMenu>
+                            <Items>
+                                <eo:MenuItem Text-Html="Ventas Por Vendedor" NavigateUrl="~/Listar/frmListarVentas.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Comisiones Por Vendedor" NavigateUrl="~/Listar/frmListarComision.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Reporte" Width="122">
+                        <SubMenu>
+                           <Items>
+                                <eo:MenuItem Text-Html="Comisiones entre 2 Periodos Diferentes " NavigateUrl="~/Reportes/frmRptComisionesPor2Periodos.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones por Grupo de Ventas" NavigateUrl="~/Reportes/cntCCGrupoVentas.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones Por Periodo" NavigateUrl="~/Reportes/frmRptComisionesPeriodo.aspx">
+                                </eo:MenuItem>
+                                <eo:MenuItem Text-Html="Total Comisiones Por Vendedor Por Periodo" NavigateUrl="~/Reportes/frmRptComisionesVendedorPeriodo.aspx">
+                                </eo:MenuItem>
+                            </Items>
+                        </SubMenu>
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Cerrar Sessión" 
+                        Width="122" NavigateUrl="~/iniciarSesion.aspx">
+                    </eo:MenuItem>
+                    <eo:MenuItem IsSeparator="True">
+                    </eo:MenuItem>
+                    <eo:MenuItem Text-HorizontalAlign="Center" Text-Html="Ayuda" Width="122" NavigateUrl="~/Ayuda/ctnAyuda.aspx">
+                    </eo:MenuItem>
+                </Items>
+            </TopGroup>
+        </eo:Menu>
+        
+    </div>
+    
+    <div style="background-color:#FFFFFF;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <img src="/Imagenes/footer.jpg" width="1025px"  height="27px" />
+    
+    </form>
+    </center>
+    
+</body>
+</html>
